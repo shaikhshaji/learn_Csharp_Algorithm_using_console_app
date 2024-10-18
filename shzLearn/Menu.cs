@@ -19,7 +19,7 @@ namespace shzLearn
                 Console.WriteLine("\t[0] Exit");
                 Console.WriteLine("\t[x] Clear Screen");
 
-                string inputUserOption = Console.ReadLine();
+                var inputUserOption = Console.ReadLine();
 
                 switch (inputUserOption)
                 {
