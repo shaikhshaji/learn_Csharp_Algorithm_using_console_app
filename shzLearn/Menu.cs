@@ -57,6 +57,7 @@ namespace shzLearn
                 Console.WriteLine("\n\tEnter the Program that you want to run and test:");
                 Console.WriteLine("\t[1] Multiplication Table");
                 Console.WriteLine("\t[2] Average of Four Numbers");
+                Console.WriteLine("\t[3] Calculate 3 number and give output (X+Y).Z and (X.Y + Y.Z)");
                 Console.WriteLine("\t[0] Back to Main Menu");
                 Console.WriteLine("\t[x] Clear Screen");
 
@@ -78,6 +79,10 @@ namespace shzLearn
                     case "2":
                         Console.Clear();
                         practiseSimplePrograms.AverageOfFourNumbers();
+                        break;
+                    case "3":
+                        Console.Clear();
+                        practiseSimplePrograms.DesiredCalcOfGivenNumbers();
                         break;
                     default:
                         Console.Clear();
@@ -120,6 +125,7 @@ namespace shzLearn
                         Console.Clear();
                         practiseSimplePrograms.AverageOfFourNumbers();
                         break;
+                   
                     default:
                         Console.Clear();
                         Console.WriteLine("\n\txxxxxxxx Invalid Input, please enter proper option. xxxxxxxx\n");

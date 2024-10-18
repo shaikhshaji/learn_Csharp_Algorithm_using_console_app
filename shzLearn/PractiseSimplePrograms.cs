@@ -56,6 +56,36 @@ namespace shzLearn
             Console.WriteLine("\n Average of the Numbers is : " + avg);
         }
 
+        public void DesiredCalcOfGivenNumbers()
+        {
+
+            Console.WriteLine("\n\tWrite a C# Sharp program that takes three numbers (x,y,z) as input and outputs (x+y).z and x.y + y.z." +
+              "\n\tTest Data:" +
+              "\n\tEnter the First number: 5" +
+              "\n\tEnter the Second number: 6" +
+              "\n\tEnter the third number: 7" +
+              "\n\t" +
+              "\n\tExpected Output:" +
+              "\n\tResult of specified numbers 5, 6 and 7, (x+y).z is 77 and x.y + y.z is 72\n\n\n");
+
+            int num1, num2, num3, num4;
+            Console.Write("  Enter the First number :  ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("  Enter the Second number :  ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("  Enter the Third number :  ");
+            num3 = Convert.ToInt32(Console.ReadLine());
+
+            int FirstOutput = (num1 + num2) * num3;
+            int SecondOutput = (num1 * num2 + num2 * num3);
+
+            Console.WriteLine("\n (X + Y).Z is : " + FirstOutput);
+            Console.WriteLine("\n (X.Y + Y.Z) is : " + SecondOutput);
+        }
+
+
+
+
 
     }
 }
