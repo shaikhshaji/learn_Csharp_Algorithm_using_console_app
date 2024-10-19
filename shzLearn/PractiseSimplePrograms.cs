@@ -82,6 +82,29 @@ namespace shzLearn
             Console.WriteLine("\n (X + Y).Z is : " + FirstOutput);
             Console.WriteLine("\n (X.Y + Y.Z) is : " + SecondOutput);
         }
+        public void MathCalcOfGivenNumbers()
+        {
+
+            Console.WriteLine("\n\tWrite a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing two numbers entered by the user." +
+              "\n\tTest Data:" +
+              "\n\tInput the first number: 25\n\tInput the second number: 4" +
+              "\n\t" +
+              "\n\tExpected Output:" +
+              "\n\t25 + 4 = 29\n\t25 - 4 = 21\n\t25 x 4 = 100\n\t25 / 4 = 6\n\t25 mod 4 = 1\n\n\n");
+
+            int num1, num2;
+            Console.Write("\t  Enter the First number :  ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\t  Enter the Second number :  ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+          
+            Console.WriteLine($"\t (X + Y) = {num1} + {num2} = {num1 + num2}" ,num1,num2);
+            Console.WriteLine($"\t (X - Y) = {num1} - {num2} = {num1 - num2}" ,num1,num2);
+            Console.WriteLine($"\t (X * Y) = {num1} * {num2} = {num1 * num2}" ,num1,num2);
+            Console.WriteLine($"\t (X / Y) = {num1} / {num2} = {num1 / num2}" ,num1,num2);
+            Console.WriteLine($"\t (X % Y) = {num1} % {num2} = {num1 % num2}" ,num1,num2);
+
+        }
 
 
 

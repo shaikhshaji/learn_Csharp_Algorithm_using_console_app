@@ -58,10 +58,11 @@ namespace shzLearn
                 Console.WriteLine("\t[1] Multiplication Table");
                 Console.WriteLine("\t[2] Average of Four Numbers");
                 Console.WriteLine("\t[3] Calculate 3 number and give output (X+Y).Z and (X.Y + Y.Z)");
+                Console.WriteLine("\t[4] Calculate Math basic operator by using 2 numbers");
                 Console.WriteLine("\t[0] Back to Main Menu");
                 Console.WriteLine("\t[x] Clear Screen");
 
-                string inputUserOption = Console.ReadLine();
+                var inputUserOption = Console.ReadLine();
 
                 switch (inputUserOption)
                 {
@@ -83,6 +84,10 @@ namespace shzLearn
                     case "3":
                         Console.Clear();
                         practiseSimplePrograms.DesiredCalcOfGivenNumbers();
+                        break;
+                    case "4":
+                        Console.Clear();
+                        practiseSimplePrograms.MathCalcOfGivenNumbers();
                         break;
                     default:
                         Console.Clear();
