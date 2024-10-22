@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace shzLearn
 {
-    public class PractiseSimplePrograms
+    public static class PractiseSimplePrograms
     {
-        public void MultiplicationTable()
+        public static void MultiplicationTable()
         {
             Console.WriteLine("\n\tWrite a C# Sharp program that prints the multiplication table of a number as input." +
                 "\n\tTest Data:" +
@@ -28,7 +28,7 @@ namespace shzLearn
             }
         }
 
-        public void AverageOfFourNumbers()
+        public static void AverageOfFourNumbers()
         {
 
             Console.WriteLine("\n\tWrite a C# Sharp program that takes four numbers as input to calculate and print the average." +
@@ -56,7 +56,7 @@ namespace shzLearn
             Console.WriteLine("\n Average of the Numbers is : " + avg);
         }
 
-        public void DesiredCalcOfGivenNumbers()
+        public static void DesiredCalcOfGivenNumbers()
         {
 
             Console.WriteLine("\n\tWrite a C# Sharp program that takes three numbers (x,y,z) as input and outputs (x+y).z and x.y + y.z." +
@@ -82,7 +82,7 @@ namespace shzLearn
             Console.WriteLine("\n (X + Y).Z is : " + FirstOutput);
             Console.WriteLine("\n (X.Y + Y.Z) is : " + SecondOutput);
         }
-        public void MathCalcOfGivenNumbers()
+        public static void MathCalcOfGivenNumbers()
         {
 
             Console.WriteLine("\n\tWrite a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing two numbers entered by the user." +
@@ -97,13 +97,33 @@ namespace shzLearn
             num1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("\t  Enter the Second number :  ");
             num2 = Convert.ToInt32(Console.ReadLine());
-          
-            Console.WriteLine($"\t (X + Y) = {num1} + {num2} = {num1 + num2}" ,num1,num2);
-            Console.WriteLine($"\t (X - Y) = {num1} - {num2} = {num1 - num2}" ,num1,num2);
-            Console.WriteLine($"\t (X * Y) = {num1} * {num2} = {num1 * num2}" ,num1,num2);
-            Console.WriteLine($"\t (X / Y) = {num1} / {num2} = {num1 / num2}" ,num1,num2);
-            Console.WriteLine($"\t (X % Y) = {num1} % {num2} = {num1 % num2}" ,num1,num2);
 
+            Console.WriteLine($"\t (X + Y) = {num1} + {num2} = {num1 + num2}", num1, num2);
+            Console.WriteLine($"\t (X - Y) = {num1} - {num2} = {num1 - num2}", num1, num2);
+            Console.WriteLine($"\t (X * Y) = {num1} * {num2} = {num1 * num2}", num1, num2);
+            Console.WriteLine($"\t (X / Y) = {num1} / {num2} = {num1 / num2}", num1, num2);
+            Console.WriteLine($"\t (X % Y) = {num1} % {num2} = {num1 % num2}", num1, num2);
+        }
+        public static void FourLineNumberWithSpaceOrWitoutSpace()
+        {
+
+            Console.WriteLine("\n\tWrite a C# program that takes a number as input and displays it four times in a row (separated by blank spaces), and then four times in the next row, with no separation. You should do it twice: Use the console. Write and use {0}." +
+              "\n\tTest Data:" +
+              "\n\tInput number: 25\n\t" +
+              "\n\tExpected Output:" +
+              "\n\t25 25 25 25\n\t25252525\n\t25 25 25 25\n\t25252525\n\n\n");
+
+            int num1;
+            Console.Write("\t  Enter the number :  ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (i % 2 == 0)
+                    Console.WriteLine("\t{0} {0} {0} {0}", num1);
+                else
+                    Console.WriteLine("\t{0}{0}{0}{0}", num1);
+            }
         }
 
 

@@ -8,9 +8,9 @@ namespace shzLearn
 {
     public class Menu
     {
+        private bool flag = true;
         public void MainMenu()
         {
-            bool flag = true;
             while (flag)
             {
                 Console.WriteLine("\n\tEnter the Option:");
@@ -29,7 +29,7 @@ namespace shzLearn
                     case "0":
                         Console.Clear();
                         flag = false;
-                        return;
+                        break;
                     case "1":
                         Console.Clear();
                         PractiseProgram();
@@ -43,15 +43,11 @@ namespace shzLearn
                         Console.WriteLine("\n\txxxxxxxx Invalid Input, please enter proper option. xxxxxxxx\n");
                         break;
                 }
-
-
             }
         }
 
         public void PractiseProgram()
         {
-            PractiseSimplePrograms practiseSimplePrograms = new PractiseSimplePrograms();
-            bool flag = true;
             while (flag)
             {
                 Console.WriteLine("\n\tEnter the Program that you want to run and test:");
@@ -59,6 +55,7 @@ namespace shzLearn
                 Console.WriteLine("\t[2] Average of Four Numbers");
                 Console.WriteLine("\t[3] Calculate 3 number and give output (X+Y).Z and (X.Y + Y.Z)");
                 Console.WriteLine("\t[4] Calculate Math basic operator by using 2 numbers");
+                Console.WriteLine("\t[5] Display the entered number 4 lines with space and without space. wierd , ryt?");
                 Console.WriteLine("\t[0] Back to Main Menu");
                 Console.WriteLine("\t[x] Clear Screen");
 
@@ -71,23 +68,28 @@ namespace shzLearn
                         break;
                     case "0":
                         Console.Clear();
-                        flag = false;
+                        //flag = false;
+                        MainMenu();
                         break;
                     case "1":
                         Console.Clear();
-                        practiseSimplePrograms.MultiplicationTable();
+                        PractiseSimplePrograms.MultiplicationTable();
                         break;
                     case "2":
                         Console.Clear();
-                        practiseSimplePrograms.AverageOfFourNumbers();
+                        PractiseSimplePrograms.AverageOfFourNumbers();
                         break;
                     case "3":
                         Console.Clear();
-                        practiseSimplePrograms.DesiredCalcOfGivenNumbers();
+                        PractiseSimplePrograms.DesiredCalcOfGivenNumbers();
                         break;
                     case "4":
                         Console.Clear();
-                        practiseSimplePrograms.MathCalcOfGivenNumbers();
+                        PractiseSimplePrograms.MathCalcOfGivenNumbers();
+                        break;
+                    case "5":
+                        Console.Clear();
+                        PractiseSimplePrograms.FourLineNumberWithSpaceOrWitoutSpace();
                         break;
                     default:
                         Console.Clear();
@@ -101,7 +103,7 @@ namespace shzLearn
         }
         public void AlgorithmProgram()
         {
-            PractiseSimplePrograms practiseSimplePrograms = new PractiseSimplePrograms();
+            //   PractiseSimplePrograms practiseSimplePrograms = new PractiseSimplePrograms();
             bool flag = true;
             while (flag)
             {
@@ -124,13 +126,13 @@ namespace shzLearn
                         break;
                     case "1":
                         Console.Clear();
-                        practiseSimplePrograms.MultiplicationTable();
+                        //       practiseSimplePrograms.MultiplicationTable();
                         break;
                     case "2":
                         Console.Clear();
-                        practiseSimplePrograms.AverageOfFourNumbers();
+                        //        practiseSimplePrograms.AverageOfFourNumbers();
                         break;
-                   
+
                     default:
                         Console.Clear();
                         Console.WriteLine("\n\txxxxxxxx Invalid Input, please enter proper option. xxxxxxxx\n");
