@@ -59,7 +59,9 @@ namespace shzLearn
                 Console.WriteLine("\t[4] Calculate Math basic operator by using 2 numbers");
                 Console.WriteLine("\t[5] Display the entered number 4 lines with space and without space. wierd , ryt?");
                 Console.WriteLine("\t[6] Convert Celsius degrees to Kelvin and Fahrenheit.");
-                Console.WriteLine("\t[0] Back to Main Menu");
+                Console.WriteLine("\t[7] Enter 2 integer, check if one of it should be posative and negative, print boolean result.");
+
+                Console.WriteLine("\n\t[0] Back to Main Menu");
                 Console.WriteLine("\t[x] Clear Screen");
                 Console.Write("\n\n\tEnter your Input Here.... \t");
 
@@ -98,6 +100,10 @@ namespace shzLearn
                     case "6":
                         Console.Clear();
                         PractiseSimplePrograms.ConvertCelsiusToKelvinAndFahrenheit();
+                        break;                 
+                    case "7":
+                        Console.Clear();
+                        PractiseSimplePrograms.CheckPosativeNegative();
                         break;
                     default:
                         Console.Clear();

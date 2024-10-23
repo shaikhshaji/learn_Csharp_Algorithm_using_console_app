@@ -144,5 +144,23 @@ namespace shzLearn
             Console.WriteLine("\tKelvin:\t\t{0}", K);
             Console.WriteLine("\tFahrenheit:\t{0}", F);
         }
+
+        public static void CheckPosativeNegative()
+        {
+            Console.WriteLine("\n\tWrite a C# program to check a pair of integers and return true if one is negative and one is positive." +
+              "\n\tTest Data:" +
+              "\n\tInput first integer:\t-5\n\tInput second integer:\t25" +
+              "\n\tExpected Output:" +
+              "\n\tTrue\n\n\n");
+
+            int A, B;
+            Console.Write("\tEnter the First number :  ");
+            A = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\tEnter the Second number :  ");
+            B = Convert.ToInt32(Console.ReadLine());
+
+            bool res = ((A > 0) != (B > 0));
+            Console.WriteLine($"\n\n\t\t{res}");
+        }
     }
 }
