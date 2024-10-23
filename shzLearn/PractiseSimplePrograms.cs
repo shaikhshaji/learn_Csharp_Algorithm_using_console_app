@@ -126,9 +126,23 @@ namespace shzLearn
             }
         }
 
+        public static void ConvertCelsiusToKelvinAndFahrenheit()
+        {
+            Console.WriteLine("\n\tWrite a C# program to convert Celsius degrees to Kelvin and Fahrenheit." +
+            "\n\tTest Data:" +
+            "\n\tEnter the amount of celsius: 30\n\t" +
+            "\n\tExpected Output:" +
+            "\n\tKelvin = 303\n\tFahrenheit = 86\n\n\n");
 
+            decimal C, K, F = 0;
+            Console.Write("\tEnter the number :  ");
+            C = Convert.ToDecimal(Console.ReadLine());
+            K = decimal.Add(C, (decimal)273.15);
+            F = (C * 9 / 5) + 32;
 
-
-
+            Console.WriteLine("\n\n\tDegree Celsius:\t{0}", C);
+            Console.WriteLine("\tKelvin:\t\t{0}", K);
+            Console.WriteLine("\tFahrenheit:\t{0}", F);
+        }
     }
 }

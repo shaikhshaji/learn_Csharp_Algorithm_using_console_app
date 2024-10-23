@@ -18,6 +18,8 @@ namespace shzLearn
                 Console.WriteLine("\t[2] Algorithm");
                 Console.WriteLine("\t[0] Exit");
                 Console.WriteLine("\t[x] Clear Screen");
+                Console.Write("\n\n\tEnter your Input Here.... \t");
+
 
                 var inputUserOption = Console.ReadLine();
 
@@ -56,8 +58,11 @@ namespace shzLearn
                 Console.WriteLine("\t[3] Calculate 3 number and give output (X+Y).Z and (X.Y + Y.Z)");
                 Console.WriteLine("\t[4] Calculate Math basic operator by using 2 numbers");
                 Console.WriteLine("\t[5] Display the entered number 4 lines with space and without space. wierd , ryt?");
+                Console.WriteLine("\t[6] Convert Celsius degrees to Kelvin and Fahrenheit.");
                 Console.WriteLine("\t[0] Back to Main Menu");
                 Console.WriteLine("\t[x] Clear Screen");
+                Console.Write("\n\n\tEnter your Input Here.... \t");
+
 
                 var inputUserOption = Console.ReadLine();
 
@@ -68,7 +73,6 @@ namespace shzLearn
                         break;
                     case "0":
                         Console.Clear();
-                        //flag = false;
                         MainMenu();
                         break;
                     case "1":
@@ -90,6 +94,10 @@ namespace shzLearn
                     case "5":
                         Console.Clear();
                         PractiseSimplePrograms.FourLineNumberWithSpaceOrWitoutSpace();
+                        break;                   
+                    case "6":
+                        Console.Clear();
+                        PractiseSimplePrograms.ConvertCelsiusToKelvinAndFahrenheit();
                         break;
                     default:
                         Console.Clear();
@@ -103,8 +111,6 @@ namespace shzLearn
         }
         public void AlgorithmProgram()
         {
-            //   PractiseSimplePrograms practiseSimplePrograms = new PractiseSimplePrograms();
-            bool flag = true;
             while (flag)
             {
                 Console.WriteLine("\n\tEnter the Algoritham Program that you want to run and test:");
@@ -112,8 +118,8 @@ namespace shzLearn
                 Console.WriteLine("\t[2] ");
                 Console.WriteLine("\t[0] Back to Main Menu");
                 Console.WriteLine("\t[x] Clear Screen");
-
-                string inputUserOption = Console.ReadLine();
+                Console.Write("\n\n\tEnter your Input Here.... \t");
+                var inputUserOption = Console.ReadLine();
 
                 switch (inputUserOption)
                 {
@@ -122,7 +128,7 @@ namespace shzLearn
                         break;
                     case "0":
                         Console.Clear();
-                        flag = false;
+                        MainMenu();
                         break;
                     case "1":
                         Console.Clear();
